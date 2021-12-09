@@ -1,0 +1,26 @@
+.calculate-form__field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.calculate-form__input {
+    height: 30px;
+    width: 70%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.calculate-form__btn {
+    background-color: darkcyan;
+    border: none;
+    padding: 8px;
+    margin: 10px 0;
+    width: 100%;
+    color: #fff;
+    cursor: pointer;
+}

@@ -1,0 +1,38 @@
+<div>
+    <form class="calculate-form">
+        <div class="calculate-form__field">
+            <p>Количество километров</p>
+            <input
+                class="calculate-form__input"
+                [(ngModel)]="kilometers"
+                type="number"
+                name="kilometers"
+            />
+        </div>
+        <div class="calculate-form__field">
+            <p>Возраст</p>
+            <input
+                class="calculate-form__input"
+                [(ngModel)]="age"
+                type="number"
+                name="age"
+            />
+        </div>
+        <div class="calculate-form__field">
+            <p>Вес багажа</p>
+            <input
+                class="calculate-form__input"
+                [(ngModel)]="baggageWeight"
+                type="number"
+                name="baggageWeight"
+            />
+        </div>
+        <button
+            class="calculate-form__btn"
+            (click)="onCalculate($event, kilometers, age, baggageWeight)"
+            type="submit"
+        >
+            Рассчитать
+        </button>
+    </form>
+</div>
