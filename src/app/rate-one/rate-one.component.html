@@ -2,13 +2,13 @@
     <div class="table-block bg-grey">
         <p>Аэрофлот</p>
     </div>
-    <div class="table-block">
-        <p>Эконом: {{ econom }}</p>
+    <div class="table-block" *ngIf="calculateService.maxBagWeightEconom">
+        <p>Эконом: {{ calculateService.rateOneEconom | async }} ₽</p>
     </div>
-    <div class="table-block">
-        <p>Продвинутый: {{ advanced }}</p>
+    <div class="table-block" *ngIf="calculateService.maxBagWeightAdvanced">
+        <p>Продвинутый: {{ calculateService.rateOneAdvanced | async }} ₽</p>
     </div>
-    <div class="table-block">
-        <p>Люкс: {{ lux }}</p>
+    <div class="table-block" *ngIf="calculateService.maxBagWeightLux">
+        <p>Люкс: {{ calculateService.rateOneLux | async }} ₽</p>
     </div>
 </div>

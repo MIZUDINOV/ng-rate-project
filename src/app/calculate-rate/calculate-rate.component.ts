@@ -5,7 +5,6 @@ import { CalculateService } from '../shared/calculate.service';
     selector: 'calculate-rate',
     templateUrl: './calculate-rate.component.html',
     styleUrls: ['./calculate-rate.component.scss'],
-    providers: [CalculateService],
 })
 export class CalculateRate {
     public kilometers!: number;
